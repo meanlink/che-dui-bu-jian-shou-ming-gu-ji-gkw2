@@ -31,6 +31,7 @@ services:
       DATABASE_URL: postgresql+psycopg://app:${DB_PASSWORD:-LocalAnalysis2026}@db:5432/analysis
       REDIS_URL: redis://redis:6379/0
       JWT_SECRET: ${JWT_SECRET:-fleet-weibull-development-only}
+      TRIAL_SEED_SECRET: ${TRIAL_SEED_SECRET:-fleet-weibull-local-trial-secret-change-before-deploy}
       SEED_DEMO: ${SEED_DEMO:-true}
       ARTIFACT_DIR: /artifacts
     ports: ["${BACKEND_PORT:-19216}:8000"]

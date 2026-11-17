@@ -8,3 +8,12 @@ class JobStatus(str, Enum):
     running = 'running'
     completed = 'completed'
     failed = 'failed'
+
+class TrialStatus(str, Enum):
+    open = 'open'
+    closed = 'closed'
+
+
+class TrialArm(str, Enum):
+    A = 'A'
+    B = 'B'
